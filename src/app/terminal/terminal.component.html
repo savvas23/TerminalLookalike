@@ -1,0 +1,33 @@
+<div class="terminal-wrapper">
+    <div class="terminal-header">
+        <div class="icons">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="title">
+            Terminal
+        </div>
+        <div class="empty-container">
+        </div>
+    </div>
+    <div class="main-body">
+        <div class="terminal-body-title">
+           Welcome! This is a Linux terminal lookalike built in Angular (just a fun quick project).<br/> Type 'help' to explore!
+        </div>
+        <!-- init first component to start convo -->
+        <div class="terminal-main-content"> 
+            <app-command (commandSubmitted)="newCommand($event)"></app-command>
+        </div>
+        <div class="terminal-main-content" *ngFor="let command of commandLogs">
+            <div class="responses">
+                <app-help *ngIf="command === 'help' "></app-help>
+                <app-cv *ngIf="command === 'cv' "></app-cv>
+                <app-linkedin *ngIf="command === 'linkedin'"></app-linkedin>
+                <app-aboutme *ngIf="command === 'whoami'"></app-aboutme>
+                <p *ngIf="!commands.includes(command)">{{command}}: command not found, try again!</p>
+            </div>
+            <app-command (commandSubmitted)="newCommand($event)"></app-command>
+        </div>
+    </div>
+</div>

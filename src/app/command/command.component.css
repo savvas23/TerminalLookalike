@@ -1,0 +1,12 @@
+
+.input {
+    all: unset;
+    color:white
+}
+
+.content-label {
+    color: #9ADF3A;
+    margin-right:10px;
+    margin-left:10px;
+    padding-bottom:10px;
+}
