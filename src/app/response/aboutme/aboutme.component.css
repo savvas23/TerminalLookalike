@@ -1,3 +1,7 @@
 a, a:link, a:visited {
     color:white;
  }
+
+ p {
+    margin-top: 0;
+ }

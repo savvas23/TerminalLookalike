@@ -8,8 +8,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HelpComponent } from './response/help/help.component';
 import { CVComponent } from './response/cv/cv.component';
 import { LinkedinComponent } from './response/linkedin/linkedin.component';
-import { AutofocusDirective } from './command/autofocus.directive';
+import { AutofocusDirective } from './directives/autofocus.directive';
 import { AboutMeComponent } from './response/aboutme/aboutme.component';
+import { TextScramblerDirective } from './directives/text-scrambler.directive';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AboutMeComponent } from './response/aboutme/aboutme.component';
     CVComponent,
     LinkedinComponent,
     AutofocusDirective,
+    TextScramblerDirective,
     AboutMeComponent
   ],
   imports: [
