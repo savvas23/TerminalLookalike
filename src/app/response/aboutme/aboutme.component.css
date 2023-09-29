@@ -4,4 +4,6 @@ a, a:link, a:visited {
 
  p {
     margin-top: 0;
+    overflow-x:hidden;
  }
+

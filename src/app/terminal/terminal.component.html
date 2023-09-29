@@ -21,10 +21,10 @@
         </div>
         <div class="terminal-main-content" *ngFor="let command of commandLogs">
             <div class="responses">
-                <app-help *ngIf="command === 'help' "></app-help>
-                <app-cv *ngIf="command === 'cv' "></app-cv>
-                <app-linkedin *ngIf="command === 'linkedin'"></app-linkedin>
-                <app-aboutme *ngIf="command === 'whoami'"></app-aboutme>
+                <app-help *ngIf="command === 'help' || command === 'Help' "></app-help>
+                <app-cv *ngIf="command === 'cv' || command === 'Cv' "></app-cv>
+                <app-linkedin *ngIf="command === 'linkedin' || command === 'Linkedin'"></app-linkedin>
+                <app-aboutme *ngIf="command === 'whoami' || command === 'Whoami'"></app-aboutme>
                 <p *ngIf="!commands.includes(command)">{{command}}: command not found, try again!</p>
             </div>
             <app-command (commandSubmitted)="newCommand($event)"></app-command>

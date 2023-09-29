@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class TerminalComponent {
 
   public commandLogs: string[] = [];
-  public commands: string[] = ['help','cv','linkedin','whoami'];
+  public commands: string[] = ['help','Help','cv','Cv','linkedin','Linkedin','whoami','Whoami'];
 
   newCommand(event): void {
     this.commandLogs.push(event);
