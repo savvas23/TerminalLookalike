@@ -1,3 +1,14 @@
+:host {
+    background: url("/assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
 .terminal-wrapper {
     min-height: 350px;
     max-width: 650px;
@@ -26,14 +37,14 @@
     flex: 1;
 }
 
-.icons span{
+.icons span, .icons a{
     width: 0.875rem;
     height: 0.875rem;
     margin: 0 0 0 8px;
     border-radius: 50%;
 }
 
-.icons span:first-child {
+.icons a:nth-child(1) {
     background: #fc615c;
 }
 

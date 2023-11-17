@@ -11,6 +11,9 @@ import { LinkedinComponent } from './response/linkedin/linkedin.component';
 import { AutofocusDirective } from './directives/autofocus.directive';
 import { AboutMeComponent } from './response/aboutme/aboutme.component';
 import { TextScramblerDirective } from './directives/text-scrambler.directive';
+import { GithubResponseComponent } from './response/github/github-response/github-response.component';
+import { WebsiteComponent } from './response/website/website.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,14 @@ import { TextScramblerDirective } from './directives/text-scrambler.directive';
     LinkedinComponent,
     AutofocusDirective,
     TextScramblerDirective,
-    AboutMeComponent
+    AboutMeComponent,
+    GithubResponseComponent,
+    WebsiteComponent
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
