@@ -1,7 +1,7 @@
 <div class="terminal-wrapper">
     <div class="terminal-header">
         <div class="icons">
-            <a href="https://www.google.com"><span></span></a>
+            <span></span>
             <span></span>
             <span></span>
         </div>
@@ -25,9 +25,7 @@
                 <app-cv *ngIf="command === 'cv' || command === 'Cv' "></app-cv>
                 <app-linkedin *ngIf="command === 'linkedin' || command === 'Linkedin'"></app-linkedin>
                 <app-aboutme *ngIf="command === 'whoami' || command === 'Whoami'"></app-aboutme>
-                <app-github-response *ngIf="command === 'github' || command === 'Github'"></app-github-response>
-                <app-website *ngIf="command === 'website' || command === 'Website'"></app-website>
-                <p *ngIf="!commands.includes(command) && command !== 'github'">{{command}}: command not found, try again!</p>
+                <p *ngIf="!commands.includes(command)">{{command}}: command not found, try again!</p>
             </div>
             <app-command (commandSubmitted)="newCommand($event)"></app-command>
         </div>
